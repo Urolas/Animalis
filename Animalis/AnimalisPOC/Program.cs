@@ -1,7 +1,32 @@
 ﻿using AnimalisPOC.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System.Diagnostics;
 
-using var context = new AppDbContext();
-var test = context.Animals.ToList();
+namespace AnimalisPOC;
 
-Debugger.Break();
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        var host = Host.CreateDefaultBuilder(args)
+           .ConfigureServices((context, services) =>
+           {
+               services.AddDbContext<AppDbContext>(options =>
+                   options.UseNpgsql(context.Configuration.GetConnectionString("DatabaseConnection")));
+           })
+           .Build();
+
+
+        using var scope = host.Services.CreateScope();
+        var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+
+        var test = dbContext.Animals.ToList();
+        Debugger.Break();
+
+
+    } 
+}
