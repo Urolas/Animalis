@@ -1,0 +1,61 @@
+﻿@page
+@model Animalis.WebApp.Pages.AnimalsModel
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Liste des Animaux</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <h1>Liste des Animaux</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Type d'Animal</th>
+                <th>Hauteur (cm)</th>
+                <th>Poids (kg)</th>
+                <th>Couleur</th>
+                <th>Espérance de Vie (années)</th>
+                <th>Régime</th>
+                <th>Habitat</th>
+                <th>Prédateurs</th>
+                <th>Vitesse Moyenne (km/h)</th>
+                <th>Pays Trouvés</th>
+                <th>Statut de Conservation</th>
+                <th>Famille</th>
+                <th>Durée de Gestation (jours)</th>
+                <th>Vitesse Maximale (km/h)</th>
+                <th>Structure Sociale</th>
+                <th>Petits par Naissance</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var animal in Model.AnimalList)
+            {
+                <tr>
+                    <td>@animal.Id</td>
+                    <td>@animal.AnimalType</td>
+                    <td>@animal.HeightCm</td>
+                    <td>@animal.WeightKg</td>
+                    <td>@animal.Color</td>
+                    <td>@animal.LifespanYears</td>
+                    <td>@animal.Diet</td>
+                    <td>@animal.Habitat</td>
+                    <td>@animal.Predators</td>
+                    <td>@animal.AverageSpeedKmh</td>
+                    <td>@animal.CountriesFound</td>
+                    <td>@animal.ConservationStatus</td>
+                    <td>@animal.Family</td>
+                    <td>@animal.GestationPeriodDays</td>
+                    <td>@animal.TopSpeedKmh</td>
+                    <td>@animal.SocialStructure</td>
+                    <td>@animal.OffspringPerBirth</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

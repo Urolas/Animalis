@@ -5,9 +5,11 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalisPOC", "AnimalisPOC\AnimalisPOC.csproj", "{80A8ED83-25BF-4218-A9D1-1DA619A0496C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animalis.Common", "Animalis.Common\Animalis.Common.csproj", "{A7111F86-8587-444E-9A38-9BF87A86CD70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animalis.Common", "Animalis.Common\Animalis.Common.csproj", "{A7111F86-8587-444E-9A38-9BF87A86CD70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animalis.Database", "Animalis.Database\Animalis.Database.csproj", "{0D91D2BA-0751-4AC4-943F-8DBACF35405F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animalis.Database", "Animalis.Database\Animalis.Database.csproj", "{0D91D2BA-0751-4AC4-943F-8DBACF35405F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animalis.WebApp", "Animalis.WebApp\Animalis.WebApp.csproj", "{EB78A3C6-9833-4ACD-8F99-69E5121752A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0D91D2BA-0751-4AC4-943F-8DBACF35405F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D91D2BA-0751-4AC4-943F-8DBACF35405F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D91D2BA-0751-4AC4-943F-8DBACF35405F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB78A3C6-9833-4ACD-8F99-69E5121752A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB78A3C6-9833-4ACD-8F99-69E5121752A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB78A3C6-9833-4ACD-8F99-69E5121752A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB78A3C6-9833-4ACD-8F99-69E5121752A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

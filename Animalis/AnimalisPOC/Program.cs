@@ -11,7 +11,6 @@ class Program
 {
     static void Main(string[] args)
     {
-
         var host = Host.CreateDefaultBuilder()
            .ConfigureServices((context, services) =>
            {
@@ -25,6 +24,5 @@ class Program
 
         var test = dbContext.Animals.ToList();
         Debugger.Break();
-
     } 
 }
