@@ -1,9 +1,9 @@
 ﻿using Animalis.Common;
 using Microsoft.EntityFrameworkCore;
 
-namespace AnimalisPOC.Data;
+namespace Animalis.Database;
 
-internal class AppDbContext : DbContext
+public class AppDbContext : DbContext
 {
     public DbSet<Animal> Animals { get; set; }
 
