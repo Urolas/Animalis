@@ -1,5 +1,3 @@
-﻿################################################################################
-# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
-################################################################################
-
-/Animalis/AnimalisPOC/obj/Debug/net8.0
+﻿obj/
+bin/
+.vs/
